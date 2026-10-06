@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hnsc-methylation"
+version = "0.1.0"
+description = "Reproducible patient-level analysis of DNA methylation in TCGA HNSC tumours"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "Musalula Sinkala"}]
+dependencies = [
+  "numpy>=1.26,<3",
+  "pandas>=2.2,<3",
+  "scipy>=1.11,<2",
+  "scikit-learn>=1.4,<2",
+  "lifelines>=0.30,<0.31",
+  "matplotlib>=3.8,<4",
+  "seaborn>=0.13,<0.14",
+  "openpyxl>=3.1,<4",
+  "threadpoolctl>=3.1,<4",
+]
+
+[project.optional-dependencies]
+notebook = [
+  "jupyterlab>=4,<5",
+  "ipykernel>=6,<8",
+  "nbformat>=5.10,<6",
+  "nbclient>=0.10,<1",
+]
+
+[project.scripts]
+hnsc-methylation = "hnsc_methylation.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

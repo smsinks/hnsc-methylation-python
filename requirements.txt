@@ -1,0 +1,4 @@
+# Install the reusable package and the notebook interface from this checkout.
+# Scientific dependencies are maintained once, in pyproject.toml.
+-e .[notebook]
+

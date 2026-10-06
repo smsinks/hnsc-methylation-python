@@ -1,0 +1,254 @@
+{
+  "passed": true,
+  "manuscript_permutation_setting": true,
+  "permutations": 100,
+  "checks": [
+    {
+      "check": "patients",
+      "passed": true,
+      "observed": 495,
+      "expected": 495
+    },
+    {
+      "check": "AFR patients",
+      "passed": true,
+      "observed": 47,
+      "expected": 47
+    },
+    {
+      "check": "EUR patients",
+      "passed": true,
+      "observed": 448,
+      "expected": 448
+    },
+    {
+      "check": "unique input probes",
+      "passed": true,
+      "observed": 22601,
+      "expected": 22601
+    },
+    {
+      "check": "eligible probes",
+      "passed": true,
+      "observed": 21791,
+      "expected": 21791
+    },
+    {
+      "check": "BH-significant probes",
+      "passed": true,
+      "observed": 93,
+      "expected": 93
+    },
+    {
+      "check": "differential probes meeting effect criterion",
+      "passed": true,
+      "observed": 17,
+      "expected": 17
+    },
+    {
+      "check": "RNA-matched patients",
+      "passed": true,
+      "observed": 487,
+      "expected": 487
+    },
+    {
+      "check": "finite full-cohort expression tests",
+      "passed": true,
+      "observed": 24224,
+      "expected": 24224
+    },
+    {
+      "check": "full-cohort expression associations",
+      "passed": true,
+      "observed": 2014,
+      "expected": 2014
+    },
+    {
+      "check": "primary DMPs retained in HPV-negative disease",
+      "passed": true,
+      "observed": 12,
+      "expected": 12
+    },
+    {
+      "check": "candidate Cox models",
+      "passed": true,
+      "observed": 17,
+      "expected": 17
+    },
+    {
+      "check": "FDR-supported candidate survival effects",
+      "passed": true,
+      "observed": 0,
+      "expected": 0
+    },
+    {
+      "check": "FDR-supported survival interactions",
+      "passed": true,
+      "observed": 0,
+      "expected": 0
+    },
+    {
+      "check": "broader survival tests",
+      "passed": true,
+      "observed": 21838,
+      "expected": 21838
+    },
+    {
+      "check": "broader screen candidates",
+      "passed": true,
+      "observed": 77,
+      "expected": 77
+    },
+    {
+      "check": "RNA GSEA pathways",
+      "passed": true,
+      "observed": 290,
+      "expected": 290
+    },
+    {
+      "check": "RNA GSEA pathways at q below 0.25",
+      "passed": true,
+      "observed": 0,
+      "expected": 0
+    },
+    {
+      "check": "PNG scientific figures",
+      "passed": true,
+      "observed": 11,
+      "expected": 11
+    },
+    {
+      "check": "differential methylation test identities",
+      "passed": true,
+      "observed": 21791,
+      "expected": 21791
+    },
+    {
+      "check": "differential methylation: delta_beta_AFR_minus_EUR",
+      "passed": true,
+      "observed": 9.996344030316351e-17,
+      "expected": "max difference within rtol=1e-06, atol=1e-100"
+    },
+    {
+      "check": "differential methylation: adjusted_race_coefficient_M_value",
+      "passed": true,
+      "observed": 2.220446049250313e-16,
+      "expected": "max difference within rtol=1e-06, atol=1e-100"
+    },
+    {
+      "check": "differential methylation: p_adjusted",
+      "passed": true,
+      "observed": 1.1102230246251565e-16,
+      "expected": "max difference within rtol=1e-06, atol=1e-100"
+    },
+    {
+      "check": "differential methylation: q_adjusted",
+      "passed": true,
+      "observed": 1.1102230246251565e-16,
+      "expected": "max difference within rtol=1e-06, atol=1e-100"
+    },
+    {
+      "check": "exact expression test identities",
+      "passed": true,
+      "observed": 72828,
+      "expected": 72828
+    },
+    {
+      "check": "exact expression: spearman_r",
+      "passed": true,
+      "observed": 9.974659986866641e-17,
+      "expected": "max difference within rtol=1e-06, atol=1e-100"
+    },
+    {
+      "check": "exact expression: p_value",
+      "passed": true,
+      "observed": 1.1102230246251565e-16,
+      "expected": "max difference within rtol=1e-06, atol=1e-100"
+    },
+    {
+      "check": "exact expression: q_value",
+      "passed": true,
+      "observed": 4.403595543767125e-15,
+      "expected": "max difference within rtol=1e-06, atol=1e-100"
+    },
+    {
+      "check": "exact expression: n",
+      "passed": true,
+      "observed": 0.0,
+      "expected": "max difference within rtol=1e-06, atol=1e-100"
+    },
+    {
+      "check": "candidate survival test identities",
+      "passed": true,
+      "observed": 17,
+      "expected": 17
+    },
+    {
+      "check": "candidate survival: hr_per_0_1_beta",
+      "passed": true,
+      "observed": 2.220446049250313e-16,
+      "expected": "max difference within rtol=1e-06, atol=1e-10"
+    },
+    {
+      "check": "candidate survival: p_cox",
+      "passed": true,
+      "observed": 1.1102230246251565e-16,
+      "expected": "max difference within rtol=1e-06, atol=1e-10"
+    },
+    {
+      "check": "candidate survival: q_cox",
+      "passed": true,
+      "observed": 5.551115123125783e-17,
+      "expected": "max difference within rtol=1e-06, atol=1e-10"
+    },
+    {
+      "check": "candidate survival: p_interaction",
+      "passed": true,
+      "observed": 9.71445146547012e-17,
+      "expected": "max difference within rtol=1e-06, atol=1e-10"
+    },
+    {
+      "check": "candidate survival: q_interaction",
+      "passed": true,
+      "observed": 0.0,
+      "expected": "max difference within rtol=1e-06, atol=1e-10"
+    },
+    {
+      "check": "classifier sensitivities test identities",
+      "passed": true,
+      "observed": 2,
+      "expected": 2
+    },
+    {
+      "check": "classifier sensitivities: roc_auc",
+      "passed": true,
+      "observed": 1.1102230246251565e-16,
+      "expected": "max difference within rtol=1e-06, atol=1e-08"
+    },
+    {
+      "check": "classifier sensitivities: average_precision",
+      "passed": true,
+      "observed": 0.0,
+      "expected": "max difference within rtol=1e-06, atol=1e-08"
+    },
+    {
+      "check": "classifier sensitivities: balanced_accuracy",
+      "passed": true,
+      "observed": 0.0,
+      "expected": "max difference within rtol=1e-06, atol=1e-08"
+    },
+    {
+      "check": "primary ROC AUC",
+      "passed": true,
+      "observed": 0.9080072188449848,
+      "expected": 0.9080072188449848
+    },
+    {
+      "check": "manuscript permutation P",
+      "passed": true,
+      "observed": 0.009900990099009901,
+      "expected": 0.009900990099009901
+    }
+  ],
+  "scope": "Primary models recomputed from bundled source data; broad survival-screen and GSEA summaries imported as documented fixed inputs."
+}

@@ -1,0 +1,8 @@
+{
+  "roc_auc": 0.9080072188449848,
+  "average_precision": 0.4964295396946072,
+  "balanced_accuracy": 0.8125949848024316,
+  "clinical_roc_auc": 0.5958396656534954,
+  "clinical_average_precision": 0.12909677076935924,
+  "permutation_p_roc_auc": 0.009900990099009901
+}

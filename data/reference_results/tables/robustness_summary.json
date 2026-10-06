@@ -1,0 +1,63 @@
+{
+  "independently_verified_HC3_models": 12,
+  "BH_agrees_with_SciPy": true,
+  "n_primary": 495,
+  "n_hpv_negative": 389,
+  "hpv_negative_groups": {
+    "EUR": 346,
+    "AFR": 43
+  },
+  "sites_by_group": {
+    "AFR": {
+      "Hypopharynx": 1,
+      "Larynx": 19,
+      "Oral cavity": 16,
+      "Oropharynx": 6,
+      "Other": 5
+    },
+    "EUR": {
+      "Hypopharynx": 7,
+      "Larynx": 94,
+      "Oral cavity": 212,
+      "Oropharynx": 73,
+      "Other": 62
+    }
+  },
+  "stage_by_group": {
+    "AFR": {
+      "I": 2,
+      "II": 1,
+      "III": 6,
+      "IV": 31,
+      "Unknown": 7
+    },
+    "EUR": {
+      "I": 23,
+      "II": 68,
+      "III": 68,
+      "IV": 227,
+      "Unknown": 62
+    }
+  },
+  "hpv_unknown_by_group": {
+    "AFR": 1,
+    "EUR": 33
+  },
+  "primary_DMPs": 17,
+  "primary_DMPs_high_completeness": 14,
+  "primary_DMPs_HC3_and_ordinary_OLS_q_lt_005": 15,
+  "hpv_negative_DMPs": 12,
+  "primary_DMPs_retained_HPV_negative_BH_and_effect": 12,
+  "primary_DMPs_HPV_negative_same_coefficient_direction": 17,
+  "primary_missingness_flags_BH005": [],
+  "adjusted_unadjusted_spearman_p_ranking": 0.7729682715041095,
+  "versions": {
+    "Python": "3.14.6",
+    "numpy": "2.5.1",
+    "pandas": "2.3.3",
+    "scipy": "1.18.0",
+    "scikit-learn": "1.8.0",
+    "lifelines": "0.30.0",
+    "matplotlib": "3.11.0"
+  }
+}

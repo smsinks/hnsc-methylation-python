@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: >-
+  Please cite this software when using the patient-level pipeline, and also
+  cite the original TCGA study and the Infinium probe-annotation resource
+  described in the data provenance documentation.
+type: software
+title: "HNSC methylation: a reproducible Python pipeline"
+authors:
+  - family-names: Sinkala
+    given-names: Musalula
+version: 0.1.0
+date-released: 2026-10-06
+license: MIT
+abstract: >-
+  Python functions and a Jupyter notebook for cohort preparation,
+  annotation-based probe filtering, differential methylation,
+  cross-validated classification, matched methylation-expression
+  association, survival modelling, robustness checks and figure generation
+  in TCGA HNSC. AFR and EUR denote the recorded clinical race categories
+  Black or African American and White; they are not inferred genetic ancestry.
+keywords:
+  - DNA methylation
+  - head and neck squamous cell carcinoma
+  - TCGA
+  - reproducible research
+  - epigenetics
+

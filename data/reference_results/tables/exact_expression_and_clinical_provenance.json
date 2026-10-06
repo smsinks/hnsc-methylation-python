@@ -1,0 +1,55 @@
+{
+  "clinical_source": "inputs:clinical_patient",
+  "methylation_source": "inputs:methylation_clean",
+  "expression_source": "inputs:expression",
+  "expression_units": "Batch-normalized RSEM from Illumina HiSeq RNASeqV2, according to supplied meta_mrna_seq_v2_rsem.txt",
+  "clinical_n": 495,
+  "hpv_status_by_group": {
+    "Negative": {
+      "AFR": 43,
+      "EUR": 346
+    },
+    "Positive": {
+      "AFR": 3,
+      "EUR": 69
+    },
+    "Unknown": {
+      "AFR": 1,
+      "EUR": 33
+    }
+  },
+  "paired_n_by_group": {
+    "All": 487,
+    "African": 47,
+    "White": 440
+  },
+  "unique_probe_gene_pairs": 25179,
+  "duplicate_expression_gene_symbols_first_record_retained": 7,
+  "tested_pairs_by_group": {
+    "African": 25084,
+    "All": 25124,
+    "White": 25123
+  },
+  "regulatory_signal_pairs_by_group": {
+    "African": 1531,
+    "All": 2104,
+    "White": 2141
+  },
+  "correlation": "Two-sided Spearman rank correlation; pairwise complete measured beta and RNA values; no methylation imputation; n is pair-specific.",
+  "multiple_testing": "Benjamini\u2013Hochberg over finite P values for all unique CpG\u2013gene pairs separately within All, African, and White groups.",
+  "alignment": "Patients matched by normalized explicit TCGA patient IDs; All restricted to the 495-patient manuscript cohort with available RNA. Multiple genomic locations for the same CpG\u2013gene pair are joined and not retested.",
+  "available_exposure_fields": [
+    "HISTORY_NEOADJUVANT_TRTYN",
+    "ICD_10",
+    "ICD_O_3_HISTOLOGY",
+    "ICD_O_3_SITE",
+    "RADIATION_THERAPY"
+  ],
+  "original_method_corrections": [
+    "Original rSquare field contains Spearman rho, not Pearson r or r squared.",
+    "Original All correlation cohort included 515 RNA-matched tumours across all clinical race categories; new All cohort is restricted to the manuscript cohort.",
+    "Original survival high/low cutoff was zscore(beta)>0, equivalent to above/below the cohort mean, not the median.",
+    "Original GSEA used RNA expression, absolute signal-to-noise ranking, KEGG 2019, 1000 phenotype permutations, weighted exponent 1, and gene-set size 15\u2013500.",
+    "Original survival workbook includes 49 duplicated full rows among 21887 rows; the unique test count is 21838."
+  ]
+}

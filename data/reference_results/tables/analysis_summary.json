@@ -1,0 +1,33 @@
+{
+  "patients": 495,
+  "n_AFR": 47,
+  "n_EUR": 448,
+  "probes": 21791,
+  "input_unique_probes": 22601,
+  "quality_excluded_probes": 810,
+  "adjusted_FDR_lt_0_05": 93,
+  "reportable_DMP_abs_delta_ge_0_05": 17,
+  "reportable_AFR_hyper": 11,
+  "reportable_EUR_hyper": 6,
+  "classifier": {
+    "roc_auc": 0.9080072188449848,
+    "average_precision": 0.4964295396946072,
+    "balanced_accuracy": 0.8125949848024316,
+    "clinical_roc_auc": 0.5958396656534954,
+    "clinical_average_precision": 0.12909677076935924,
+    "permutation_p_roc_auc": 0.009900990099009901
+  },
+  "PCA_explained_variance_first_six": [
+    0.20608029362811572,
+    0.08831360404074817,
+    0.06892306695220418,
+    0.04908522464910961,
+    0.038488434584760374,
+    0.021170576422885834
+  ],
+  "regulatory_signals_abs_r_ge_0_3_FDR_lt_0_05": 2014,
+  "gsea_pathways_FDR_lt_0_25": 0,
+  "gsea_pathways_FDR_lt_0_05": 0,
+  "expression_unique_pairs": 24276,
+  "expression_finite_tests": 24224
+}

@@ -1,0 +1,65 @@
+{
+  "annotation_repository": "zhou-lab/InfiniumAnnotationData",
+  "annotation_repository_commit": "6d176d6e7e56465403d4478a09fe11b983eeb721",
+  "repository_commit_date": "2026-07-19T20:47:30Z",
+  "retrieval_date": "2026-09-04",
+  "study_probe_universe_source": "inputs:methylation_clean",
+  "mask_coordinate_assembly": "hg38 for both platforms",
+  "manifest_usage": "Probe-ID coverage only: HM27 hg38 and HM450 hg19. No genomic coordinates are joined across assemblies.",
+  "rule": "Require coverage in both full manifests; exclude union of M_general=True or any of the six AFR/EUR SNP tags below in either platform. Rule uses no differential methylation P value, effect size, survival or expression evidence.",
+  "population_SNP_tags": [
+    "M_1baseSwitchSNP_AFR_1pt",
+    "M_1baseSwitchSNP_EUR_1pt",
+    "M_2extBase_SNP_AFR_1pt",
+    "M_2extBase_SNP_EUR_1pt",
+    "M_SNP_AFR_1pt",
+    "M_SNP_EUR_1pt"
+  ],
+  "population_SNP_definition": "Published 1pt tags flag population minor allele frequency at least 1%: SNP within 5 bp of the 3-prime extension, an Infinium-I colour-channel-switch SNP, or an Infinium-II extension-base SNP. The general mask is used exactly as supplied.",
+  "sparse_mask_interpretation": "Absence of a row is interpreted as no listed mask only after manifest membership is confirmed; unknown coverage is excluded, never assumed clear.",
+  "reference_pmid": "27924034",
+  "reference_doi": "10.1093/nar/gkw967",
+  "reference_url": "https://pubmed.ncbi.nlm.nih.gov/27924034/",
+  "annotation_documentation_url": "https://zwdzwd.github.io/InfiniumAnnotation/",
+  "sources": [
+    {
+      "file": "data/probe_annotations/HM27.hg38.manifest.tsv.gz",
+      "url": "https://raw.githubusercontent.com/zhou-lab/InfiniumAnnotationData/6d176d6e7e56465403d4478a09fe11b983eeb721/Anno/HM27/HM27.hg38.manifest.tsv.gz",
+      "sha256": "55c3ccb109e28334b2c5782703dee90424aad5b510e6e97123add7b343022dd8",
+      "git_blob_sha1": "1ede3bc10ca105053d28a39cdf3199c3633aa43f",
+      "pinned_repository_blob_verified": true
+    },
+    {
+      "file": "data/probe_annotations/HM27.hg38.mask.tsv.gz",
+      "url": "https://raw.githubusercontent.com/zhou-lab/InfiniumAnnotationData/6d176d6e7e56465403d4478a09fe11b983eeb721/Anno/HM27/HM27.hg38.mask.tsv.gz",
+      "sha256": "6299edecb62b0c9cd52cb11bc60db9a20adb552a4553a001fc2b12203d2bfe3a",
+      "git_blob_sha1": "d3546b3c8831df7a2fec8f52435c3c02119ce39f",
+      "pinned_repository_blob_verified": true
+    },
+    {
+      "file": "data/probe_annotations/HM450.hg19.manifest.tsv.gz",
+      "url": "https://raw.githubusercontent.com/zhou-lab/InfiniumAnnotationData/6d176d6e7e56465403d4478a09fe11b983eeb721/Anno/HM450/HM450.hg19.manifest.tsv.gz",
+      "sha256": "25c5da8cf967d77791717e21e215eb268578dec95476695350371531b6bfc3cf",
+      "git_blob_sha1": "71ac7ff6d861ed5d7a452e4917e6129998089b0e",
+      "pinned_repository_blob_verified": true
+    },
+    {
+      "file": "data/probe_annotations/HM450.hg38.mask.tsv.gz",
+      "url": "https://raw.githubusercontent.com/zhou-lab/InfiniumAnnotationData/6d176d6e7e56465403d4478a09fe11b983eeb721/Anno/HM450/HM450.hg38.mask.tsv.gz",
+      "sha256": "5de40616d0f6b400204663583bdadfc2cdbe8c57b9c619195f385f258e48c416",
+      "git_blob_sha1": "024d42f3a3d88698f1b5a0c981775d535e3eb4a8",
+      "pinned_repository_blob_verified": true
+    }
+  ],
+  "counts": {
+    "study_probes": 22601,
+    "covered_HM27": 22601,
+    "covered_HM450": 22601,
+    "general_mask_union": 341,
+    "population_SNP_mask_union": 490,
+    "overlap_general_and_population": 21,
+    "technical_exclusions": 810,
+    "unknown_coverage": 0,
+    "eligible_primary": 21791
+  }
+}

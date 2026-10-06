@@ -1,0 +1,939 @@
+{
+  "schema_version": 1,
+  "prepared_by": "Musalula Sinkala",
+  "package_date": "2026-10-06",
+  "scientific_release": "Reviewed_2026-09-05",
+  "inputs": [
+    {
+      "key": "methylation_clean",
+      "source_name": "data_methylation_hm27_hm450_merged_clean.txt",
+      "source_sha256": "e1572b34dc0615604a45fd89a388057a75dd3950946cf124b3e12beacd7c2526",
+      "uncompressed_bytes": 249550845,
+      "uncompressed_sha256": "e1572b34dc0615604a45fd89a388057a75dd3950946cf124b3e12beacd7c2526",
+      "row_count": 25789,
+      "column_count": 526,
+      "delimiter": "comma",
+      "parts": [
+        {
+          "path": "data/inputs/methylation.csv.part001.gz",
+          "sha256": "07f1ddbc9182805fcb0f7fb384ad101cbdd34d05ab6691f1e65409d97b29e1cb",
+          "bytes": 29850427
+        },
+        {
+          "path": "data/inputs/methylation.csv.part002.gz",
+          "sha256": "c97d6014407135bca9d375ee137471a826e3a0429f6740295adfa96641c8dbd4",
+          "bytes": 29873126
+        },
+        {
+          "path": "data/inputs/methylation.csv.part003.gz",
+          "sha256": "3d3e40d6598d395468e45adb4782fe897e14621ed5506837915231035aff9446",
+          "bytes": 17801052
+        },
+        {
+          "path": "data/inputs/methylation.csv.part004.gz",
+          "sha256": "081331da58af278c1a3bba82e3f5edc5e776a359aa5e3281f0ca9edf787526f5",
+          "bytes": 20161976
+        }
+      ],
+      "storage": "Deterministic gzip. If split, concatenate decompressed parts in the listed order; only the first part begins with the original header."
+    },
+    {
+      "key": "methylation_raw",
+      "source_name": "data_methylation_hm27_hm450_merged.txt",
+      "source_sha256": "07c8f6e7bcca9df20f6e83f4e327b27c05e95e8e11cf8eecbba1479ba96d6424",
+      "uncompressed_bytes": 219071535,
+      "uncompressed_sha256": "07c8f6e7bcca9df20f6e83f4e327b27c05e95e8e11cf8eecbba1479ba96d6424",
+      "row_count": 22601,
+      "column_count": 527,
+      "delimiter": "tab",
+      "parts": [
+        {
+          "path": "data/source/methylation_original.tsv.part001.gz",
+          "sha256": "9fb92d8803933c740016feb560e58889e11d45f80e1698c4b5f88cbe1d67e074",
+          "bytes": 29819195
+        },
+        {
+          "path": "data/source/methylation_original.tsv.part002.gz",
+          "sha256": "1032e8b3ce3e7b5dc3ec8426a5858d5a2d66c47a48ede1da918aa37e865982bb",
+          "bytes": 29802896
+        },
+        {
+          "path": "data/source/methylation_original.tsv.part003.gz",
+          "sha256": "e58c36eb4c354353a826ff3aaa8dd4a09eb2affe93b82fac04e4ace647e79ab5",
+          "bytes": 29820401
+        },
+        {
+          "path": "data/source/methylation_original.tsv.part004.gz",
+          "sha256": "96d0c81908c247246aea5288426739bf8deb21dd69aa0b69459eb335ceff5eb4",
+          "bytes": 7890751
+        }
+      ],
+      "storage": "Deterministic gzip. If split, concatenate decompressed parts in the listed order; only the first part begins with the original header."
+    },
+    {
+      "key": "clinical_patient",
+      "source_name": "data_clinical_patient.txt",
+      "source_sha256": "5a5d8b4776704bf66b2f8e8a1804db47da98ba455dd0ae721974bc66fbd12c41",
+      "uncompressed_bytes": 156380,
+      "uncompressed_sha256": "5a5d8b4776704bf66b2f8e8a1804db47da98ba455dd0ae721974bc66fbd12c41",
+      "row_count": 523,
+      "column_count": 37,
+      "delimiter": "tab",
+      "parts": [
+        {
+          "path": "data/inputs/clinical_patient.tsv.gz",
+          "sha256": "7a8ce9574c4030d62b6299634e0965baaf3ef6f15c8179a4a01a678393eac7c7",
+          "bytes": 37681
+        }
+      ],
+      "storage": "Deterministic gzip. If split, concatenate decompressed parts in the listed order; only the first part begins with the original header."
+    },
+    {
+      "key": "clinical_sample",
+      "source_name": "data_clinical_sample.txt",
+      "source_sha256": "f7971ca3bbf4563713372d2965be7c8720a44a2593e86707c4c35a9b9e2b6ba8",
+      "uncompressed_bytes": 125709,
+      "uncompressed_sha256": "f7971ca3bbf4563713372d2965be7c8720a44a2593e86707c4c35a9b9e2b6ba8",
+      "row_count": 523,
+      "column_count": 18,
+      "delimiter": "tab",
+      "parts": [
+        {
+          "path": "data/inputs/clinical_sample.tsv.gz",
+          "sha256": "14810dbb8e5c34b647d0741d093243d6acabfd81a54f488dc0b60a3975bbd129",
+          "bytes": 10208
+        }
+      ],
+      "storage": "Deterministic gzip. If split, concatenate decompressed parts in the listed order; only the first part begins with the original header."
+    },
+    {
+      "key": "expression",
+      "source_name": "data_mrna_seq_v2_rsem.txt",
+      "source_sha256": "923edd4dbcfeb3430244b3df816b92f779bfebfbbf1b03b4f538d3f410a9cd6a",
+      "uncompressed_bytes": 73635436,
+      "uncompressed_sha256": "923edd4dbcfeb3430244b3df816b92f779bfebfbbf1b03b4f538d3f410a9cd6a",
+      "row_count": 20531,
+      "column_count": 517,
+      "delimiter": "tab",
+      "parts": [
+        {
+          "path": "data/inputs/expression.tsv.gz",
+          "sha256": "dccd3d88bf28c7d8152f1ee734ecf07b2b86188eab88d4d29d8845f45ac8a9d6",
+          "bytes": 32381018
+        }
+      ],
+      "storage": "Deterministic gzip. If split, concatenate decompressed parts in the listed order; only the first part begins with the original header."
+    }
+  ],
+  "reference_summaries": [
+    {
+      "path": "data/reference/survival_screen.tsv.gz",
+      "source_name": "Survival Results.xlsx",
+      "source_sheet": "Gene Surv Results",
+      "source_sha256": "13d43f46a66065018cd839fc2aa54eca0f30caff6b8a787d64c1d34e3a2ec4cd",
+      "sha256": "d23936456a779bd1cdf8d2e8bf8b298c5334d2c58c6dd9325bd96b2eee0f8bc2",
+      "bytes": 431426,
+      "uncompressed_sha256": "1758e354addcdee4a7b318a7bdd3c89ba7ac6eabf76147979ce0edd5cf8e5e23",
+      "rows": 21887,
+      "columns": [
+        "GeneLocation",
+        "AFR_high",
+        "AFR_low",
+        "EUR_high",
+        "EUR_low",
+        "pValue",
+        "adjPvalue"
+      ],
+      "transformation": "Worksheet values extracted to tab-separated text; all rows and numeric values preserved without modification."
+    },
+    {
+      "path": "data/reference/gsea_kegg_pathways.tsv.gz",
+      "source_name": "GSEA Enriched KEGG Pathways Results.xlsx",
+      "source_sheet": "first worksheet",
+      "source_sha256": "adaa60fdb58498e0cc04671e2e0ac6841840653eabf788b46c1dac2451ea3f2f",
+      "sha256": "f12ae2a8913a2cf8519233f2c82d7e8f942548fac67b89282bcdb8685d5d3a44",
+      "bytes": 17075,
+      "uncompressed_sha256": "3546b5c9f593ced3f94414faa7d9add78fc15ab085ad6e330888f0e2deade777",
+      "rows": 290,
+      "columns": [
+        "Term",
+        "GeneSetSize",
+        "EnrichmentScore",
+        "ES_pValue",
+        "NES",
+        "NES_pValue",
+        "NES_qValue",
+        "NES_FWER",
+        "Num_Genes_in_LEF"
+      ],
+      "transformation": "Worksheet values extracted to tab-separated text; all rows and numeric values preserved without modification."
+    }
+  ],
+  "frozen_files": [
+    {
+      "path": "data/probe_annotations/HM27.hg38.manifest.tsv.gz",
+      "source_name": "Reviewed_2026-09-05/data/probe_annotations/HM27.hg38.manifest.tsv.gz",
+      "sha256": "55c3ccb109e28334b2c5782703dee90424aad5b510e6e97123add7b343022dd8",
+      "bytes": 1473630,
+      "transformation": "None; exact original gzip bytes."
+    },
+    {
+      "path": "data/probe_annotations/HM27.hg38.mask.tsv.gz",
+      "source_name": "Reviewed_2026-09-05/data/probe_annotations/HM27.hg38.mask.tsv.gz",
+      "sha256": "6299edecb62b0c9cd52cb11bc60db9a20adb552a4553a001fc2b12203d2bfe3a",
+      "bytes": 40027,
+      "transformation": "None; exact original gzip bytes."
+    },
+    {
+      "path": "data/probe_annotations/HM450.hg19.manifest.tsv.gz",
+      "source_name": "Reviewed_2026-09-05/data/probe_annotations/HM450.hg19.manifest.tsv.gz",
+      "sha256": "25c5da8cf967d77791717e21e215eb268578dec95476695350371531b6bfc3cf",
+      "bytes": 22608516,
+      "transformation": "None; exact original gzip bytes."
+    },
+    {
+      "path": "data/probe_annotations/HM450.hg38.mask.tsv.gz",
+      "source_name": "Reviewed_2026-09-05/data/probe_annotations/HM450.hg38.mask.tsv.gz",
+      "sha256": "5de40616d0f6b400204663583bdadfc2cdbe8c57b9c619195f385f258e48c416",
+      "bytes": 1592024,
+      "transformation": "None; exact original gzip bytes."
+    },
+    {
+      "path": "data/reference_results/tables/analysis_summary.json",
+      "source_name": "Reviewed_2026-09-05/results/tables/analysis_summary.json",
+      "source_sha256": "7d6a4c8894ba7cb71d63b2422f8c054f2e9e57ecb6872bd593b8cccee980b561",
+      "sha256": "7d6a4c8894ba7cb71d63b2422f8c054f2e9e57ecb6872bd593b8cccee980b561",
+      "bytes": 956,
+      "row_count": null,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/tables/candidate_survival_models.tsv",
+      "source_name": "Reviewed_2026-09-05/results/tables/candidate_survival_models.tsv",
+      "source_sha256": "5acdfbfc55a3e98a7b8609b898f37efb53cf5ec824ad8e76a428eb1f4b2a171b",
+      "sha256": "5acdfbfc55a3e98a7b8609b898f37efb53cf5ec824ad8e76a428eb1f4b2a171b",
+      "bytes": 5379,
+      "row_count": 17,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/tables/classifier_feature_sensitivity.tsv",
+      "source_name": "Reviewed_2026-09-05/results/tables/classifier_feature_sensitivity.tsv",
+      "source_sha256": "b8fce000db3b9cac8614c2805e4e5fafa99282abcf2f62667edac895350d0ac7",
+      "sha256": "b8fce000db3b9cac8614c2805e4e5fafa99282abcf2f62667edac895350d0ac7",
+      "bytes": 1910,
+      "row_count": 30,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/tables/classifier_metrics.json",
+      "source_name": "Reviewed_2026-09-05/results/tables/classifier_metrics.json",
+      "source_sha256": "5399b441ee1e1e13bed58e7ae3335433c0f22372c39ceb22e14850ae8c42eaa4",
+      "sha256": "5399b441ee1e1e13bed58e7ae3335433c0f22372c39ceb22e14850ae8c42eaa4",
+      "bytes": 265,
+      "row_count": null,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/tables/classifier_oof_predictions.tsv",
+      "source_name": "Reviewed_2026-09-05/results/tables/classifier_oof_predictions.tsv",
+      "source_sha256": "f5d3067950ffa3e88961593947121376e08b23c581eb2e4ff923d907caad22e3",
+      "sha256": "f5d3067950ffa3e88961593947121376e08b23c581eb2e4ff923d907caad22e3",
+      "bytes": 31767,
+      "row_count": 495,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/tables/classifier_permutation_null.tsv",
+      "source_name": "Reviewed_2026-09-05/results/tables/classifier_permutation_null.tsv",
+      "source_sha256": "f25e58ede64cb5482ea3bd9aad67b64c6106d1050f7aa70de66365e6c35f8fd1",
+      "sha256": "f25e58ede64cb5482ea3bd9aad67b64c6106d1050f7aa70de66365e6c35f8fd1",
+      "bytes": 4224,
+      "row_count": 100,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/tables/classifier_robustness_folds.tsv",
+      "source_name": "Reviewed_2026-09-05/results/tables/classifier_robustness_folds.tsv",
+      "source_sha256": "126ebff002f0cb30e874d2e4780dd6000790e4a4b24bd5ecb671c4c39fdb5c73",
+      "sha256": "126ebff002f0cb30e874d2e4780dd6000790e4a4b24bd5ecb671c4c39fdb5c73",
+      "bytes": 503,
+      "row_count": 10,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/tables/classifier_robustness_metrics.tsv",
+      "source_name": "Reviewed_2026-09-05/results/tables/classifier_robustness_metrics.tsv",
+      "source_sha256": "0ace540c85b13a37eae0337eae7a768d7e9e14291362ced82c45c7fc3fd85a9d",
+      "sha256": "0ace540c85b13a37eae0337eae7a768d7e9e14291362ced82c45c7fc3fd85a9d",
+      "bytes": 209,
+      "row_count": 2,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/tables/clinical_balance.tsv",
+      "source_name": "Reviewed_2026-09-05/results/tables/clinical_balance.tsv",
+      "source_sha256": "235dcf06e3d40125a2f86bcf9fdb047afb98680062787c9c21c94b1956e26e06",
+      "sha256": "235dcf06e3d40125a2f86bcf9fdb047afb98680062787c9c21c94b1956e26e06",
+      "bytes": 343,
+      "row_count": 4,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/tables/differential_methylation_all_probes.tsv",
+      "source_name": "Reviewed_2026-09-05/results/tables/differential_methylation_all_probes.tsv",
+      "source_sha256": "b11cf5a2f06e6fbc3a24d398530516580cda961ed3cab07276daa5e7923d25c1",
+      "sha256": "b11cf5a2f06e6fbc3a24d398530516580cda961ed3cab07276daa5e7923d25c1",
+      "bytes": 8680736,
+      "row_count": 21791,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/tables/differential_methylation_hpv_negative.tsv",
+      "source_name": "Reviewed_2026-09-05/results/tables/differential_methylation_hpv_negative.tsv",
+      "source_sha256": "95a051090e794af29ff30eee03c8ce67f4fa580bba6e89b75e46451f14f8db2b",
+      "sha256": "95a051090e794af29ff30eee03c8ce67f4fa580bba6e89b75e46451f14f8db2b",
+      "bytes": 8665482,
+      "row_count": 21791,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/tables/exact_expression_and_clinical_provenance.json",
+      "source_name": "Reviewed_2026-09-05/results/tables/exact_expression_and_clinical_provenance.json",
+      "source_sha256": "72a241275692824b442d7398e2a48eb91210181648bee3d5df03d631b01bf59a",
+      "sha256": "8cc250ac2c5635321a126aa911722dc0951a56ca877e4cea167171d363836acc",
+      "bytes": 2258,
+      "row_count": null,
+      "transformation": "Private source path strings replaced by logical identifiers; numerical/statistical content unchanged."
+    },
+    {
+      "path": "data/reference_results/tables/exact_methylation_expression_correlations.tsv",
+      "source_name": "Reviewed_2026-09-05/results/tables/exact_methylation_expression_correlations.tsv",
+      "source_sha256": "ffaf76eb2be24f13ca03580be73504c8bd400800361a5f3e200c32f345c1f2c5",
+      "sha256": "ffaf76eb2be24f13ca03580be73504c8bd400800361a5f3e200c32f345c1f2c5",
+      "bytes": 10485341,
+      "row_count": 75537,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/tables/group_survival_model.json",
+      "source_name": "Reviewed_2026-09-05/results/tables/group_survival_model.json",
+      "source_sha256": "516d9e2c4772514ac10a5b9971745aee8f51a4c30b66ab6f584d5e7867a3d333",
+      "sha256": "516d9e2c4772514ac10a5b9971745aee8f51a4c30b66ab6f584d5e7867a3d333",
+      "bytes": 200,
+      "row_count": null,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/tables/gsea_kegg_pathways.tsv",
+      "source_name": "Reviewed_2026-09-05/results/tables/gsea_kegg_pathways.tsv",
+      "source_sha256": "c549b016e620c0a88e6e6d9b31ac7d10768e20129704c836d32d811f7eefa2e8",
+      "sha256": "c549b016e620c0a88e6e6d9b31ac7d10768e20129704c836d32d811f7eefa2e8",
+      "bytes": 35102,
+      "row_count": 290,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/tables/independent_HC3_checks.tsv",
+      "source_name": "Reviewed_2026-09-05/results/tables/independent_HC3_checks.tsv",
+      "source_sha256": "7ec7524a9a5377db15666ac7ca50b8d7ba06bc5bd883d169ff0ddc0f02a5f900",
+      "sha256": "7ec7524a9a5377db15666ac7ca50b8d7ba06bc5bd883d169ff0ddc0f02a5f900",
+      "bytes": 682,
+      "row_count": 12,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/tables/integrated_candidate_evidence.tsv",
+      "source_name": "Reviewed_2026-09-05/results/tables/integrated_candidate_evidence.tsv",
+      "source_sha256": "2894e790ae2bae1d64fb53191cbcef18c456ba17908710124cc59ecf75d95cdb",
+      "sha256": "2894e790ae2bae1d64fb53191cbcef18c456ba17908710124cc59ecf75d95cdb",
+      "bytes": 5398,
+      "row_count": 20,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/tables/methylation_expression_correlations.tsv",
+      "source_name": "Reviewed_2026-09-05/results/tables/methylation_expression_correlations.tsv",
+      "source_sha256": "aaa7a6c2712f27cbd8b99524c16137694705085c390db7d4282fc2866492d800",
+      "sha256": "aaa7a6c2712f27cbd8b99524c16137694705085c390db7d4282fc2866492d800",
+      "bytes": 11826836,
+      "row_count": 72828,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/tables/pca_scores.tsv",
+      "source_name": "Reviewed_2026-09-05/results/tables/pca_scores.tsv",
+      "source_sha256": "cd18b6fb7b17a77c56f8220618d170f9e4bba9706753ecb7a74b1924062fa0dd",
+      "sha256": "cd18b6fb7b17a77c56f8220618d170f9e4bba9706753ecb7a74b1924062fa0dd",
+      "bytes": 72773,
+      "row_count": 495,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/tables/primary_candidate_robustness.tsv",
+      "source_name": "Reviewed_2026-09-05/results/tables/primary_candidate_robustness.tsv",
+      "source_sha256": "09625b9458172229f2c34509d43be8698a0476214bf81ccf09f8af494d8617c1",
+      "sha256": "09625b9458172229f2c34509d43be8698a0476214bf81ccf09f8af494d8617c1",
+      "bytes": 2643,
+      "row_count": 17,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/tables/probe_quality_annotations.tsv",
+      "source_name": "Reviewed_2026-09-05/results/tables/probe_quality_annotations.tsv",
+      "source_sha256": "202d9f4986b118c16447afdb4f6cc722bd8cc13ebf9e8289ba83c81e109e4897",
+      "sha256": "202d9f4986b118c16447afdb4f6cc722bd8cc13ebf9e8289ba83c81e109e4897",
+      "bytes": 3586678,
+      "row_count": 22601,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/tables/probe_quality_provenance.json",
+      "source_name": "Reviewed_2026-09-05/results/tables/probe_quality_provenance.json",
+      "source_sha256": "8b8d4134e762a8d8f7e7714f722ddc3a99e9223929412dc28a5035938fbe70f0",
+      "sha256": "a1e6fe6b8f5905d0ff8ca7ff4ca7adf78a189112c6b32886594717ea09ccaeb3",
+      "bytes": 3633,
+      "row_count": null,
+      "transformation": "Private source path strings replaced by logical identifiers; numerical/statistical content unchanged."
+    },
+    {
+      "path": "data/reference_results/tables/robustness_summary.json",
+      "source_name": "Reviewed_2026-09-05/results/tables/robustness_summary.json",
+      "source_sha256": "373d3a2ec84bbda13f2e394d25b1a3839971f865d2886f4b958297d1c7c1d315",
+      "sha256": "373d3a2ec84bbda13f2e394d25b1a3839971f865d2886f4b958297d1c7c1d315",
+      "bytes": 1325,
+      "row_count": null,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/tables/survival_screen_summary.json",
+      "source_name": "Reviewed_2026-09-05/results/tables/survival_screen_summary.json",
+      "source_sha256": "974faf43a2e7833629ac797611740c82d86829eb2d7741f0d8ca5028862a98f9",
+      "sha256": "974faf43a2e7833629ac797611740c82d86829eb2d7741f0d8ca5028862a98f9",
+      "bytes": 89,
+      "row_count": null,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/tables/survival_summary.json",
+      "source_name": "Reviewed_2026-09-05/results/tables/survival_summary.json",
+      "source_sha256": "72b4281f925666bc41494d43fa7ed07225811fec3b92339d4751a061be306878",
+      "sha256": "72b4281f925666bc41494d43fa7ed07225811fec3b92339d4751a061be306878",
+      "bytes": 740,
+      "row_count": null,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/source_data/figure1_panel_a_pc_covariate_associations.tsv",
+      "source_name": "Reviewed_2026-09-05/results/source_data/figure1_panel_a_pc_covariate_associations.tsv",
+      "source_sha256": "a562384d06929d066b9c96a4e858ed2b3514e7834b5a91a42111b846a3c17962",
+      "sha256": "a562384d06929d066b9c96a4e858ed2b3514e7834b5a91a42111b846a3c17962",
+      "bytes": 2859,
+      "row_count": 48,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/source_data/figure1_panel_b_cohort_counts.tsv",
+      "source_name": "Reviewed_2026-09-05/results/source_data/figure1_panel_b_cohort_counts.tsv",
+      "source_sha256": "8acf939c7c961579b66e59092cd413e453a7f3bbc13c4ac97b17bdc304995a4d",
+      "sha256": "8acf939c7c961579b66e59092cd413e453a7f3bbc13c4ac97b17bdc304995a4d",
+      "bytes": 23,
+      "row_count": 2,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/source_data/figure1_panel_c_clinical_balance.tsv",
+      "source_name": "Reviewed_2026-09-05/results/source_data/figure1_panel_c_clinical_balance.tsv",
+      "source_sha256": "235dcf06e3d40125a2f86bcf9fdb047afb98680062787c9c21c94b1956e26e06",
+      "sha256": "235dcf06e3d40125a2f86bcf9fdb047afb98680062787c9c21c94b1956e26e06",
+      "bytes": 343,
+      "row_count": 4,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/source_data/figure1_panel_d_pca_scores.tsv",
+      "source_name": "Reviewed_2026-09-05/results/source_data/figure1_panel_d_pca_scores.tsv",
+      "source_sha256": "cd18b6fb7b17a77c56f8220618d170f9e4bba9706753ecb7a74b1924062fa0dd",
+      "sha256": "cd18b6fb7b17a77c56f8220618d170f9e4bba9706753ecb7a74b1924062fa0dd",
+      "bytes": 72773,
+      "row_count": 495,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/source_data/figure2_panel_a_differential_all_probes.tsv",
+      "source_name": "Reviewed_2026-09-05/results/source_data/figure2_panel_a_differential_all_probes.tsv",
+      "source_sha256": "b11cf5a2f06e6fbc3a24d398530516580cda961ed3cab07276daa5e7923d25c1",
+      "sha256": "b11cf5a2f06e6fbc3a24d398530516580cda961ed3cab07276daa5e7923d25c1",
+      "bytes": 8680736,
+      "row_count": 21791,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/source_data/figure2_panel_b_top_effects.tsv",
+      "source_name": "Reviewed_2026-09-05/results/source_data/figure2_panel_b_top_effects.tsv",
+      "source_sha256": "ad90c80f57d3b01d2d87610fe9ce37560d48e13e01e7265b76e1014ef49f17ef",
+      "sha256": "ad90c80f57d3b01d2d87610fe9ce37560d48e13e01e7265b76e1014ef49f17ef",
+      "bytes": 6606,
+      "row_count": 14,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/source_data/figure2_panel_c_annotation_counts.tsv",
+      "source_name": "Reviewed_2026-09-05/results/source_data/figure2_panel_c_annotation_counts.tsv",
+      "source_sha256": "96d48782d5395c22ee563dac15fa0908896874c2371b5f28b47aadbe5ccf9d92",
+      "sha256": "96d48782d5395c22ee563dac15fa0908896874c2371b5f28b47aadbe5ccf9d92",
+      "bytes": 288,
+      "row_count": 9,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/source_data/figure3_panel_c_feature_count_sensitivity.tsv",
+      "source_name": "Reviewed_2026-09-05/results/source_data/figure3_panel_c_feature_count_sensitivity.tsv",
+      "source_sha256": "b8fce000db3b9cac8614c2805e4e5fafa99282abcf2f62667edac895350d0ac7",
+      "sha256": "b8fce000db3b9cac8614c2805e4e5fafa99282abcf2f62667edac895350d0ac7",
+      "bytes": 1910,
+      "row_count": 30,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/source_data/figure3_panel_d_permutation_null.tsv",
+      "source_name": "Reviewed_2026-09-05/results/source_data/figure3_panel_d_permutation_null.tsv",
+      "source_sha256": "f25e58ede64cb5482ea3bd9aad67b64c6106d1050f7aa70de66365e6c35f8fd1",
+      "sha256": "f25e58ede64cb5482ea3bd9aad67b64c6106d1050f7aa70de66365e6c35f8fd1",
+      "bytes": 4224,
+      "row_count": 100,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/source_data/figure3_panel_e_robustness_predictions.tsv",
+      "source_name": "Reviewed_2026-09-05/results/source_data/figure3_panel_e_robustness_predictions.tsv",
+      "source_sha256": "b412f1cc45703a2088fbe7d09518b225fbb79c918ad3db436a4a6cb480e4776e",
+      "sha256": "b412f1cc45703a2088fbe7d09518b225fbb79c918ad3db436a4a6cb480e4776e",
+      "bytes": 70051,
+      "row_count": 990,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/source_data/figure3_panel_f_validation_metrics.tsv",
+      "source_name": "Reviewed_2026-09-05/results/source_data/figure3_panel_f_validation_metrics.tsv",
+      "source_sha256": "de380a9bb79e3a71ac655f426be8afc7f0ce64fc27990fed5322ae404df7629a",
+      "sha256": "de380a9bb79e3a71ac655f426be8afc7f0ce64fc27990fed5322ae404df7629a",
+      "bytes": 328,
+      "row_count": 4,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/source_data/figure3_panels_a_b_oof_predictions.tsv",
+      "source_name": "Reviewed_2026-09-05/results/source_data/figure3_panels_a_b_oof_predictions.tsv",
+      "source_sha256": "f5d3067950ffa3e88961593947121376e08b23c581eb2e4ff923d907caad22e3",
+      "sha256": "f5d3067950ffa3e88961593947121376e08b23c581eb2e4ff923d907caad22e3",
+      "bytes": 31767,
+      "row_count": 495,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/source_data/figure4_all_correlation_panels.tsv",
+      "source_name": "Reviewed_2026-09-05/results/source_data/figure4_all_correlation_panels.tsv",
+      "source_sha256": "aaa7a6c2712f27cbd8b99524c16137694705085c390db7d4282fc2866492d800",
+      "sha256": "aaa7a6c2712f27cbd8b99524c16137694705085c390db7d4282fc2866492d800",
+      "bytes": 11826836,
+      "row_count": 72828,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/source_data/figure5_candidate_survival_models.tsv",
+      "source_name": "Reviewed_2026-09-05/results/source_data/figure5_candidate_survival_models.tsv",
+      "source_sha256": "5acdfbfc55a3e98a7b8609b898f37efb53cf5ec824ad8e76a428eb1f4b2a171b",
+      "sha256": "5acdfbfc55a3e98a7b8609b898f37efb53cf5ec824ad8e76a428eb1f4b2a171b",
+      "bytes": 5379,
+      "row_count": 17,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/source_data/figure5_panel_a_group_cox.tsv",
+      "source_name": "Reviewed_2026-09-05/results/source_data/figure5_panel_a_group_cox.tsv",
+      "source_sha256": "6eb9f0cc7347071011a567a7b2e5a24b8a596424c002e492d417b66c1f252dba",
+      "sha256": "6eb9f0cc7347071011a567a7b2e5a24b8a596424c002e492d417b66c1f252dba",
+      "bytes": 156,
+      "row_count": 1,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/source_data/figure6_bh_verification_all_workbook_rows.tsv",
+      "source_name": "Reviewed_2026-09-05/results/source_data/figure6_bh_verification_all_workbook_rows.tsv",
+      "source_sha256": "20c675d18b17cdcf433225328c09ccf194c661087db47509274f987a84f2d8e8",
+      "sha256": "20c675d18b17cdcf433225328c09ccf194c661087db47509274f987a84f2d8e8",
+      "bytes": 1554692,
+      "row_count": 21838,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/source_data/figure6_candidate_screen_survival_medians.tsv",
+      "source_name": "Reviewed_2026-09-05/results/source_data/figure6_candidate_screen_survival_medians.tsv",
+      "source_sha256": "9d80dfb43a0852acd9193093622717680973f906767599509a631c58c01b4b06",
+      "sha256": "9d80dfb43a0852acd9193093622717680973f906767599509a631c58c01b4b06",
+      "bytes": 58050,
+      "row_count": 616,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/source_data/figure7_candidate_screen_summary.tsv",
+      "source_name": "Reviewed_2026-09-05/results/source_data/figure7_candidate_screen_summary.tsv",
+      "source_sha256": "0b28d773d639e38b06e51a38dacbf34ce5621e975c5b1a994fe61b6538128289",
+      "sha256": "0b28d773d639e38b06e51a38dacbf34ce5621e975c5b1a994fe61b6538128289",
+      "bytes": 273,
+      "row_count": 2,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/source_data/figure7_km_patient_data.tsv",
+      "source_name": "Reviewed_2026-09-05/results/source_data/figure7_km_patient_data.tsv",
+      "source_sha256": "b921ef4d26ebdf4de128255a317524dfb22da7cc9a447fa31f5f716d8bfd760e",
+      "sha256": "b921ef4d26ebdf4de128255a317524dfb22da7cc9a447fa31f5f716d8bfd760e",
+      "bytes": 121280,
+      "row_count": 990,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/source_data/figure7_km_summary.tsv",
+      "source_name": "Reviewed_2026-09-05/results/source_data/figure7_km_summary.tsv",
+      "source_sha256": "2214a4ef5f36dc8da8dd04e3b0462c048b04d32da52be1cd2fc7b29931bc7967",
+      "sha256": "2214a4ef5f36dc8da8dd04e3b0462c048b04d32da52be1cd2fc7b29931bc7967",
+      "bytes": 841,
+      "row_count": 8,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/source_data/figure8_panel_c_integrated_evidence.tsv",
+      "source_name": "Reviewed_2026-09-05/results/source_data/figure8_panel_c_integrated_evidence.tsv",
+      "source_sha256": "361e4256ade662f28b427c72ab0a54d698ff1356e3a972c92220c883539795ab",
+      "sha256": "361e4256ade662f28b427c72ab0a54d698ff1356e3a972c92220c883539795ab",
+      "bytes": 4427,
+      "row_count": 16,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/source_data/figure8_panel_d_methylation_expression_links.tsv",
+      "source_name": "Reviewed_2026-09-05/results/source_data/figure8_panel_d_methylation_expression_links.tsv",
+      "source_sha256": "3735023341229a87707ed876d8cf70b9f77b2231a3407b2d501314c3743ddae0",
+      "sha256": "3735023341229a87707ed876d8cf70b9f77b2231a3407b2d501314c3743ddae0",
+      "bytes": 5578,
+      "row_count": 19,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/source_data/figure8_panels_a_b_pathway_enrichment.tsv",
+      "source_name": "Reviewed_2026-09-05/results/source_data/figure8_panels_a_b_pathway_enrichment.tsv",
+      "source_sha256": "ce8e66662a86949568471ff2d1efca3844e0530ed6effb23ac1c7dbfe1d98574",
+      "sha256": "ce8e66662a86949568471ff2d1efca3844e0530ed6effb23ac1c7dbfe1d98574",
+      "bytes": 34731,
+      "row_count": 290,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/source_data/figureS1_panel_a_probe_missingness.tsv",
+      "source_name": "Reviewed_2026-09-05/results/source_data/figureS1_panel_a_probe_missingness.tsv",
+      "source_sha256": "8b437cd88980ab823c2955bd348b8e706fa38b8e697023ad5ec641e8734a7e66",
+      "sha256": "8b437cd88980ab823c2955bd348b8e706fa38b8e697023ad5ec641e8734a7e66",
+      "bytes": 363081,
+      "row_count": 872,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/source_data/figureS1_panel_b_variance_assumptions.tsv",
+      "source_name": "Reviewed_2026-09-05/results/source_data/figureS1_panel_b_variance_assumptions.tsv",
+      "source_sha256": "97de843e5a94a1cec3ac0a8e68cf297ce1ffa14291df4764fa86e52e90ec1d98",
+      "sha256": "97de843e5a94a1cec3ac0a8e68cf297ce1ffa14291df4764fa86e52e90ec1d98",
+      "bytes": 1062789,
+      "row_count": 21791,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/source_data/figureS1_panel_c_HPV_negative_effects.tsv",
+      "source_name": "Reviewed_2026-09-05/results/source_data/figureS1_panel_c_HPV_negative_effects.tsv",
+      "source_sha256": "404e28adf5e5688f3d441014554e4d603a1da106e8070a2df32437a89b0ee038",
+      "sha256": "404e28adf5e5688f3d441014554e4d603a1da106e8070a2df32437a89b0ee038",
+      "bytes": 7876,
+      "row_count": 17,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/source_data/figureS1_panel_d_effect_thresholds.tsv",
+      "source_name": "Reviewed_2026-09-05/results/source_data/figureS1_panel_d_effect_thresholds.tsv",
+      "source_sha256": "907fc0e89f7f094823f84aeca3f9f94fe7f091f2eab2d777dc7eaf8c4861c855",
+      "sha256": "907fc0e89f7f094823f84aeca3f9f94fe7f091f2eab2d777dc7eaf8c4861c855",
+      "bytes": 1085,
+      "row_count": 42,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/source_data/figureS2_panel_a_annotation_counts.tsv",
+      "source_name": "Reviewed_2026-09-05/results/source_data/figureS2_panel_a_annotation_counts.tsv",
+      "source_sha256": "43349e4ca6486e53ecce73d2d04be18e1ce1c4218c3bb38d5962147a8a2582d6",
+      "sha256": "43349e4ca6486e53ecce73d2d04be18e1ce1c4218c3bb38d5962147a8a2582d6",
+      "bytes": 113,
+      "row_count": 6,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/source_data/figureS2_panel_b_group_correlations.tsv",
+      "source_name": "Reviewed_2026-09-05/results/source_data/figureS2_panel_b_group_correlations.tsv",
+      "source_sha256": "fbe27afe87293f9e6564aacc76bc67f19c928ba6649eb275f311691edfa51ab4",
+      "sha256": "fbe27afe87293f9e6564aacc76bc67f19c928ba6649eb275f311691edfa51ab4",
+      "bytes": 1778,
+      "row_count": 18,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/cohort/clinical_matched.csv",
+      "source_name": "Reviewed_2026-09-05/data/clinical_matched.csv",
+      "source_sha256": "6bbb5ec8aac340cf176fc5552c7147ee06b9b435cbf24c19ff28b4b0b632fbb8",
+      "sha256": "6bbb5ec8aac340cf176fc5552c7147ee06b9b435cbf24c19ff28b4b0b632fbb8",
+      "bytes": 51500,
+      "row_count": 495,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/cohort/clinical_source_fields.csv",
+      "source_name": "Reviewed_2026-09-05/data/clinical_source_fields.csv",
+      "source_sha256": "286f4b07d0a5e36accaebcbedacda291cfa6c88555b51c38beb930df232b921b",
+      "sha256": "286f4b07d0a5e36accaebcbedacda291cfa6c88555b51c38beb930df232b921b",
+      "bytes": 160303,
+      "row_count": 495,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/reference_results/cohort/expression_matched_patients.csv",
+      "source_name": "Reviewed_2026-09-05/data/expression_matched_patients.csv",
+      "source_sha256": "8b77690e17c217fbe7ae3f8c95db353a237bfc70a00967b952ad7019f4406d54",
+      "sha256": "8b77690e17c217fbe7ae3f8c95db353a237bfc70a00967b952ad7019f4406d54",
+      "bytes": 16102,
+      "row_count": 487,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/source/TCGA_LICENSE.txt",
+      "source_name": "hnsc_tcga_pan_can_atlas_2018/LICENSE",
+      "sha256": "a290da9a9b7f53084667f3b21cc3b4fce4168f917994e7516a02dd0e44385d38",
+      "bytes": 446,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/source/meta_study.txt",
+      "source_name": "hnsc_tcga_pan_can_atlas_2018/meta_study.txt",
+      "sha256": "b67e686233dbbdace3ee751d45059d712ded37fb8435f1383e33fdb6e45dae92",
+      "bytes": 623,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/source/meta_methylation_hm27_hm450_merged.txt",
+      "source_name": "hnsc_tcga_pan_can_atlas_2018/meta_methylation_hm27_hm450_merged.txt",
+      "sha256": "5833677796372b82e32a37432abfb1c304a0c565fdcd3f9a276acc04a100782a",
+      "bytes": 499,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/source/meta_mrna_seq_v2_rsem.txt",
+      "source_name": "hnsc_tcga_pan_can_atlas_2018/meta_mrna_seq_v2_rsem.txt",
+      "sha256": "f6e6c838e2ede999f3af456d8000f953eae349f8e30400ffcfbfd8d6f257d01a",
+      "bytes": 394,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/source/meta_clinical_patient.txt",
+      "source_name": "hnsc_tcga_pan_can_atlas_2018/meta_clinical_patient.txt",
+      "sha256": "f25868382fcc199bb3b5e357780965be80d2ce8aff05f285860c8996d8138b3a",
+      "bytes": 158,
+      "transformation": "None; exact original bytes."
+    },
+    {
+      "path": "data/source/meta_clinical_sample.txt",
+      "source_name": "hnsc_tcga_pan_can_atlas_2018/meta_clinical_sample.txt",
+      "sha256": "e7e4155e4a50420bc713caeb2dfe794395036390d14893767c35aae41bc7910a",
+      "bytes": 156,
+      "transformation": "None; exact original bytes."
+    }
+  ],
+  "lineage_validation": {
+    "clean_annotation_rows": 25789,
+    "raw_unique_probes": 22601,
+    "clean_unique_probes": 22601,
+    "matrix_sample_count": 523,
+    "measurement_nan_pattern_preserved": true,
+    "maximum_numeric_difference_raw_vs_clean": 0.0,
+    "maximum_numeric_difference_between_repeated_probe_rows": 0.0,
+    "clinical_matched_patient_order_and_race_groups_verified": true,
+    "clinical_n": 495,
+    "clinical_group_counts": {
+      "EUR": 448,
+      "AFR": 47
+    },
+    "all_17_reviewed_candidates_have_reproduced_group_beta_means": true,
+    "survival_original_rows": 21887,
+    "survival_duplicate_rows": 49,
+    "survival_unique_tests": 21838,
+    "survival_candidates_q_lt_0_05": 77,
+    "survival_reference_matches_reviewed_figure6_source": true,
+    "gsea_reference_rows": 290,
+    "gsea_reference_values_exactly_match_reviewed_baseline": true,
+    "candidate_mean_checks": [
+      {
+        "probe": "cg02388150",
+        "gene": "SFRP1",
+        "mean_beta_AFR": 0.523181791842425,
+        "mean_beta_EUR": 0.3928091912790047,
+        "delta_beta_AFR_minus_EUR": 0.13037260056342026
+      },
+      {
+        "probe": "cg04330449",
+        "gene": "NEUROG1",
+        "mean_beta_AFR": 0.5691175785141673,
+        "mean_beta_EUR": 0.46394494278241505,
+        "delta_beta_AFR_minus_EUR": 0.10517263573175228
+      },
+      {
+        "probe": "cg04878842",
+        "gene": "ERCC2",
+        "mean_beta_AFR": 0.23389264478460056,
+        "mean_beta_EUR": 0.11598685482402035,
+        "delta_beta_AFR_minus_EUR": 0.11790578996058021
+      },
+      {
+        "probe": "cg08634464",
+        "gene": "ZNF57",
+        "mean_beta_AFR": 0.14025002738729841,
+        "mean_beta_EUR": 0.3059568823139536,
+        "delta_beta_AFR_minus_EUR": -0.1657068549266552
+      },
+      {
+        "probe": "cg10757144",
+        "gene": "PCDHB15",
+        "mean_beta_AFR": 0.48913463529156115,
+        "mean_beta_EUR": 0.41006449827047275,
+        "delta_beta_AFR_minus_EUR": 0.0790701370210884
+      },
+      {
+        "probe": "cg11846236",
+        "gene": "COL7A1",
+        "mean_beta_AFR": 0.2092274826952693,
+        "mean_beta_EUR": 0.15676461488254959,
+        "delta_beta_AFR_minus_EUR": 0.05246286781271972
+      },
+      {
+        "probe": "cg11948328",
+        "gene": "HSD17B12",
+        "mean_beta_AFR": 0.15827773513282753,
+        "mean_beta_EUR": 0.09628341447070998,
+        "delta_beta_AFR_minus_EUR": 0.06199432066211755
+      },
+      {
+        "probe": "cg14159672",
+        "gene": "PM20D1",
+        "mean_beta_AFR": 0.4751066782029307,
+        "mean_beta_EUR": 0.6565975766401354,
+        "delta_beta_AFR_minus_EUR": -0.18149089843720473
+      },
+      {
+        "probe": "cg16786117",
+        "gene": "VSIG4",
+        "mean_beta_AFR": 0.6825357676210875,
+        "mean_beta_EUR": 0.7791554508332156,
+        "delta_beta_AFR_minus_EUR": -0.0966196832121281
+      },
+      {
+        "probe": "cg19504245",
+        "gene": "TNNT1",
+        "mean_beta_AFR": 0.31659225950573916,
+        "mean_beta_EUR": 0.2392866980116725,
+        "delta_beta_AFR_minus_EUR": 0.07730556149406667
+      },
+      {
+        "probe": "cg22038738",
+        "gene": "PLAT",
+        "mean_beta_AFR": 0.31131360317957124,
+        "mean_beta_EUR": 0.37727265921748143,
+        "delta_beta_AFR_minus_EUR": -0.06595905603791019
+      },
+      {
+        "probe": "cg24826867",
+        "gene": "IRF8",
+        "mean_beta_AFR": 0.5021212338597594,
+        "mean_beta_EUR": 0.44464205562684,
+        "delta_beta_AFR_minus_EUR": 0.05747917823291937
+      },
+      {
+        "probe": "cg26131019",
+        "gene": "LRIG1",
+        "mean_beta_AFR": 0.07020322033968979,
+        "mean_beta_EUR": 0.2876499880095972,
+        "delta_beta_AFR_minus_EUR": -0.2174467676699074
+      },
+      {
+        "probe": "cg00669623",
+        "gene": "CDK11A",
+        "mean_beta_AFR": 0.21827534894305517,
+        "mean_beta_EUR": 0.09590402235046883,
+        "delta_beta_AFR_minus_EUR": 0.12237132659258634
+      },
+      {
+        "probe": "cg09419670",
+        "gene": "PSMD5",
+        "mean_beta_AFR": 0.119969404302214,
+        "mean_beta_EUR": 0.1847399284973977,
+        "delta_beta_AFR_minus_EUR": -0.0647705241951837
+      },
+      {
+        "probe": "cg13174197",
+        "gene": "GNL3",
+        "mean_beta_AFR": 0.13018971799838594,
+        "mean_beta_EUR": 0.07659905867942801,
+        "delta_beta_AFR_minus_EUR": 0.05359065931895793
+      },
+      {
+        "probe": "cg04009666",
+        "gene": "POLG2",
+        "mean_beta_AFR": 0.09523584430060592,
+        "mean_beta_EUR": 0.04486602869554915,
+        "delta_beta_AFR_minus_EUR": 0.05036981560505677
+      }
+    ],
+    "scope": "Validation of provenance only; no model, P value, FDR or candidate set was changed."
+  },
+  "sources": {
+    "TCGA": {
+      "study_id": "hnsc_tcga_pan_can_atlas_2018",
+      "snapshot_file_dates": "2022-04-18 local downloaded study files",
+      "url": "https://github.com/cBioPortal/datahub/tree/master/public/hnsc_tcga_pan_can_atlas_2018",
+      "publication_url": "https://gdc.cancer.gov/about-data/publications/pancanatlas",
+      "license_file": "data/source/TCGA_LICENSE.txt",
+      "note": "Public processed cBioPortal TCGA PanCancer Atlas study data, not IDAT files. Local frozen snapshot is authoritative; current remote study may have changed."
+    },
+    "clean_methylation": {
+      "source_name": "data_methylation_hm27_hm450_merged_clean.txt",
+      "sha256": "e1572b34dc0615604a45fd89a388057a75dd3950946cf124b3e12beacd7c2526",
+      "source_file_date": "2022-05-18",
+      "preserved_copies_match": true,
+      "cleaning": "Original cleaning renames probe/gene/location headers, removes transcript identifier, converts sample hyphens to underscores through the original table import, splits semicolon gene/location annotations into individual rows, and writes CSV. Clean export precedes subsequent legacy imputation. Exact clean bytes supplied, rather than regeneration with a potentially different annotation policy.",
+      "underlying_input_key": "methylation_raw",
+      "license": "Underlying public processed TCGA values retain supplied TCGA license notice."
+    },
+    "probe_annotations": {
+      "repository": "zhou-lab/InfiniumAnnotationData",
+      "commit": "6d176d6e7e56465403d4478a09fe11b983eeb721",
+      "url": "https://github.com/zhou-lab/InfiniumAnnotationData/tree/6d176d6e7e56465403d4478a09fe11b983eeb721",
+      "provenance_file": "data/reference_results/tables/probe_quality_provenance.json",
+      "license_status": "No separate annotation license file was present in the reviewed release. Upstream repository license could not be verified during packaging; no new license is asserted for these third-party files."
+    },
+    "reference_results": {
+      "source_name": "Reviewed_2026-09-05/results",
+      "note": "Frozen reviewed numerical baseline. Data provenance JSON path strings were sanitized where necessary; statistics are unchanged."
+    },
+    "legacy_summaries": {
+      "source_names": [
+        "Survival Results.xlsx",
+        "GSEA Enriched KEGG Pathways Results.xlsx"
+      ],
+      "note": "Original broader survival and RNA-expression KEGG GSEA summary data preserve the reviewed figures 6 and 8. These frozen source summaries are not claimed to be regenerated from raw data by the Python patient-level pipeline."
+    }
+  }
+}

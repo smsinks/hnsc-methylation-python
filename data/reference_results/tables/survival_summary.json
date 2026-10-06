@@ -1,0 +1,22 @@
+{
+  "n": 495,
+  "events": 208,
+  "hr_AFR_vs_EUR": 1.6008800478805276,
+  "ci_low": 1.0113041645247318,
+  "ci_high": 2.534170250259348,
+  "p": 0.044650716336705525,
+  "concordance": 0.6452676276678958,
+  "top_probe": "cg13174197",
+  "top_gene": "GNL3/PBRM1",
+  "candidate_median_beta": 0.06948883575789269,
+  "candidate_logrank_p": 0.11135249430247725,
+  "group_logrank_p": 0.04553828759601355,
+  "candidate_probes_tested": 17,
+  "candidate_survival_FDR_lt_0_05": 0,
+  "candidate_interaction_FDR_lt_0_05": 0,
+  "top_candidate_hr_per_0_1_beta": 1.4516454890963688,
+  "top_candidate_ci_low": 1.0571483161288795,
+  "top_candidate_ci_high": 1.9933575959619017,
+  "top_candidate_p": 0.021253925606632418,
+  "top_candidate_q": 0.25818919157889125
+}

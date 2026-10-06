@@ -1,0 +1,11 @@
+model	fold	n_train	n_test	AFR_test	EUR_test	train_centres	test_centres
+High completeness	1	396	99	10	89	26	22
+High completeness	2	396	99	10	89	26	20
+High completeness	3	396	99	9	90	26	19
+High completeness	4	396	99	9	90	27	17
+High completeness	5	396	99	9	90	27	20
+Held-out collection centres	1	366	129	12	117	26	1
+Held-out collection centres	2	402	93	8	85	23	4
+Held-out collection centres	3	412	83	7	76	19	8
+Held-out collection centres	4	388	107	13	94	21	6
+Held-out collection centres	5	412	83	7	76	19	8
